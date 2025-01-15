@@ -32,7 +32,7 @@
         "examples:esbuild": "cd tests/examples && npm update && npm run test:esbuild",
         "bench": "vitest bench --run",
         "lint": "eslint .",
-        "build": "esbuild lib/index.ts --bundle --outfile=dist/index.js --platform=node",
+        "build": "esbuild lib/index.ts --bundle --outfile=dist/index.js --platform=node --format=esm",
         "build-types": "tsc --declaration lib/index.ts --emitDeclarationOnly --outDir ./dist",
         "prepublishOnly": "npm run build"
     },
